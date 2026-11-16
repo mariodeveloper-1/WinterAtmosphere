@@ -35,3 +35,11 @@ Apri nel browser l'indirizzo `Local` mostrato nel terminale. All'avvio l'app cer
 Il codice principale è in `src/App.jsx`. Gli stili sono in `src/App.css` e `src/index.css`.
 
 Dati meteo: [Open-Meteo](https://open-meteo.com/). Dati delle località: [GeoNames](https://www.geonames.org/).
+
+## Verifica del progetto
+
+Esegui `npm test` per verificare come i codici di Open-Meteo vengono tradotti in descrizioni ed effetti. I test usano il runner integrato di Node.js e funzionano anche senza connessione.
+
+Con `npm run dev`, scegli **Neve**, **Pioggia** o **Sereno** nel menu **Modalità test**, poi scegli **Giorno** o **Notte** nel menu **Illuminazione**. Per una prova manuale, passa da Neve di giorno a Neve di notte e verifica che il cielo si scurisca mentre i fiocchi continuano a cadere. Durante la simulazione la ricerca e le richieste meteo sono sospese. Seleziona **Meteo reale** per riprenderle. I menu sono disponibili solo in sviluppo.
+
+Per una prova visiva su iPhone, avvia `npm run dev -- --host` e apri in Safari l'indirizzo **Network** mostrato nel terminale. Mac e iPhone devono essere sulla stessa rete Wi-Fi.
